@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+</head>
+
+<body style="margin: 0; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+  <button onclick="increase()" style="background-color: green; transform: scale(2);">CLICK</button>
+
+  <h1 id="display"></h1>
+
+  <script>
+    let a = 0;
+
+    function increase() {
+      a += 1;
+      document.getElementById("display").innerText = "" + a;
+    }
+  </script>
+
+</body>
+</html>
